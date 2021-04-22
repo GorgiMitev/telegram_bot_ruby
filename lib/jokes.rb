@@ -7,7 +7,7 @@ class Jokes
     def initialize
         @joke_values = make_request
     end
-    def random_joke
+    def random_jokes
         @joke_values = @joke_values.sample
     end
     
