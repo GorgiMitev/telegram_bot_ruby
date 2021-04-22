@@ -1,4 +1,6 @@
 require 'telegram/bot'
+require_relative 'motivation.rb'
+require_relative 'jokes.rb'
 
 token = "1767471390:AAExulZahTiJBR7q_lckVAcseWbbKRBeQfc"
 
