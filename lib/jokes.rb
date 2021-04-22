@@ -4,16 +4,15 @@ require 'json'
 require_relative 'bot.rb'
 
 class Jokes 
+    @quote_values = nil
+
     def initialize
-        @joke_values = make_request
+        @quote_values = @make_request
     end
-    def random_jokes
-        @joke_values = @joke_values.sample
-    end
-    
-    private 
+
     def make_request
+        
         url = URI('https://api.yomomma.info')
-        JSON.parse.escape(Net::HTTP.get(url))
-    end
+        JSON.parse(Net::HTTP.get(url))
+      end
 end
