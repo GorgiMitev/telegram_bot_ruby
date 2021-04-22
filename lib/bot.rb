@@ -17,8 +17,10 @@ class Bot
           bot.api.send_message(chat_id: message.chat.id, text: "Goodbye, #{message.from.first_name}. Have a nice day!", date: message_date)
         when '/motivation'
             motivation_quote = Motivation.new.random_quote
-        bot.api.send_message(chat_id: message.chat.id, text: "#{motivation_quote['text']}", date: message.date)  
-              
+            bot.api.send_message(chat_id: message.chat.id, text: "#{motivation_quote['text']}", date: message.date)  
+        when '/joke'
+            joke_quote = Jokes.new.random_jokes
+            bot.api.send_message(chat_id: message.chat.id, text: "#{joke_quote['joke']}", date: message.date) 
         end
       end
     end
