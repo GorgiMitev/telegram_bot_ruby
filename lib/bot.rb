@@ -18,9 +18,12 @@ class Bot
         when '/motivation'
             motivation_quote = Motivation.new.random_quote
             bot.api.send_message(chat_id: message.chat.id, text: "#{motivation_quote['text']}", date: message.date)  
-        when '/joke'
+        when '/jokes'
             joke_quote = Jokes.new.random_jokes
             bot.api.send_message(chat_id: message.chat.id, text: "#{joke_quote['joke']}", date: message.date) 
+        else
+
+            bot.api.send_message(chat_id: message.chat.id, text: "Invalid entry, #{message.from.first_name}, you need to use  /start,  /stop , /motivation or /jokes")
         end
       end
     end
