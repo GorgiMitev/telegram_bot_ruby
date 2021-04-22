@@ -15,7 +15,11 @@ class Bot
         when '/stop'
 
           bot.api.send_message(chat_id: message.chat.id, text: "Goodbye, #{message.from.first_name}. Have a nice day!", date: message_date)
-      end
+        when '/motivation'
+            motivation_quote = Motivation.new.random_quote
+        bot.api.send_message(chat_id: message.chat.id, text: "#{motivation_quote['text']}", date: message.date)  
+              
+        end
       end
     end
 end
