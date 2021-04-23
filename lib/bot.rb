@@ -10,7 +10,7 @@ class Bot
         case message.text
         when '/start'
 
-          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}.")
+          bot.api.send_message(chat_id: message.chat.id, text: "Hello, #{message.from.first_name}. Welcome to the motivational chat bot, with a sense of humor.This chat bot is to keep you motivated and entertained. Use  /start to start the bot,  /stop to end the bot, /motivation to get a diffrent motivational quote everytime you request for it or /jokes to get a fat momma joke every time you request for it")
 
         when '/stop'
 
@@ -31,5 +31,5 @@ class Bot
         end
       end
     end
-end
+  end
 end
