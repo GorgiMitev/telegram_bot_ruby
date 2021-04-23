@@ -14,10 +14,11 @@ Metrics/MethodLength:
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
-  Enabled: false
+  Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ["describe"]
+  IgnoredMethods: ['describe']
   Max: 30
+
 
 Style/Documentation:
   Enabled: false
