@@ -9,7 +9,7 @@ RSpec.describe Motivation do
     it 'should return a JSON object' do
       expect(request_json.class).to eql(Array)
     end
-    
+
     it 'returns a non-empty JSON object' do
       expect(request_json.length).not_to eql(0)
     end
