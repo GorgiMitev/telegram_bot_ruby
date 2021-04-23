@@ -27,8 +27,13 @@ In this project I am building a telegram motivational bot that can be initialize
 
 ## Getting Started
 
+<<<<<<< HEAD
 **This is an example of how you may set up your project locally**
 - **Clone the repo by running `git clone git@github.com:Solenka1/telegram_bot_ruby.git` Or download the zip folder**
+=======
+**This is an example of how you may give instructions on setting up your project locally.**
+- **Clone the repo by running `git clone` git@github.com:Solenka1/telegram_bot_ruby.git Or download the zip folder**
+>>>>>>> telegram_bot
 - **Run `cd` telegram_bot_ruby in the terminal**
 - **Make sure you have ruby installed locally run `ruby -v`**
 - **To start the game run `ruby bin/main.rb` in the terminal**
@@ -38,6 +43,7 @@ In this project I am building a telegram motivational bot that can be initialize
 - **Then press the /start button and follow the steps given**
 To get a local copy up and running follow these simple example steps.
 
+<<<<<<< HEAD
 ### Installation
 
 **Add following line to your Gemfile:**
@@ -52,6 +58,8 @@ To get a local copy up and running follow these simple example steps.
 
 - $ gem install telegram-bot-ruby
 
+=======
+>>>>>>> telegram_bot
 ### Setup
 
 Just clone or download repo and run locally on your machine
