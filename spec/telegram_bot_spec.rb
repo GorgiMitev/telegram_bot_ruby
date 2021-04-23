@@ -11,4 +11,16 @@ RSpec.describe Motivation do
       end
     end
 
-end
+    describe '#random_quote' do
+      let(:random) { Motivation.new }
+      let(:request_random) { random.random_quote }
+  
+      it 'should return an Hash' do
+        expect(request_random.class).to eql(Hash)
+      end
+  
+      it 'should return a key and a value' do
+        expect(request_random.length).to eql(2)
+      end
+    end
+  end
