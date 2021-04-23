@@ -1,5 +1,7 @@
-require_relative '../lib/motivation.rb'
-require_relative '../lib/jokes.rb'
+# frozen_string_literal: true
+
+require_relative '../lib/motivation'
+require_relative '../lib/jokes'
 
 RSpec.describe Motivation do
   describe '#make_request' do
