@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative '../lib/motivation'
 require_relative '../lib/jokes'
 
