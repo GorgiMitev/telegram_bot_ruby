@@ -1,7 +1,10 @@
 require 'telegram/bot'
 require_relative 'motivation'
 require_relative 'jokes'
+
 # rubocop: disable Metrics/MethodLength: Method has too many lines
+# rubocop: disable Layout/LineLength: Method has too many lines
+
 class Bot
   def initialize
     token = '1767471390:AAExulZahTiJBR7q_lckVAcseWbbKRBeQfc'
@@ -38,3 +41,4 @@ class Bot
 end
 
 # rubocop: enable Metrics/MethodLength: Method has too many lines
+# rubocop: enable Layout/LineLength: Method has too many lines
