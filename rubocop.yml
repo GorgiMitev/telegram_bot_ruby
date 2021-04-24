@@ -8,17 +8,27 @@ AllCops:
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 140
+  Max: 120
 Metrics/MethodLength:
   Max: 20
 Metrics/AbcSize:
   Max: 50
 Metrics/ClassLength:
+  Max: 150
+Metrics/BlockLength:
+  IgnoredMethods: ['describe']
+  Max: 30
+
+
+Style/Documentation:
+  Enabled: false
+Style/ClassAndModuleChildren:
   Enabled: false
 Style/EachForSimpleLoop:
   Enabled: false
 Style/AndOr:
   Enabled: false
+Style/DefWithParentheses:
   Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
@@ -39,8 +49,4 @@ Style/HashEachMethods:
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
-<<<<<<< HEAD
   Enabled: false
-=======
-  Enabled: false
->>>>>>> telegram_bot

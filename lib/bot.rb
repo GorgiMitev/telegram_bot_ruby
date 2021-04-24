@@ -5,6 +5,7 @@ require_relative 'jokes'
 # rubocop: disable Metrics/MethodLength: Method has too many lines
 # rubocop: disable Layout/LineLength: Method has too many lines
 
+# Description/Explanation of our Bot class where the steps for our bot are being executed
 class Bot
   def initialize
     token = '1767471390:AAExulZahTiJBR7q_lckVAcseWbbKRBeQfc'

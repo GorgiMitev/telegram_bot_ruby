@@ -3,12 +3,10 @@ require 'net/http'
 require 'json'
 require_relative 'bot'
 
+# Description/Explanation of or Jokes class which generates random quotes
 class Jokes
   @quote_values = nil
-
-  def initialize
-    @quote_values = @make_request
-  end
+  @quote_values = @make_request
 
   def make_request
     url = URI('https://api.yomomma.info')

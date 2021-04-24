@@ -3,10 +3,9 @@ require 'net/http'
 require 'json'
 require_relative 'bot'
 
+# Description/Explanation of Motivaton class which generates random motivation quotes
 class Motivation
-  def initialize
-    @quote_values = make_request
-  end
+  @quote_values = @make_request
 
   def random_quote
     @quote_values = @quote_values.sample
